@@ -16,7 +16,7 @@ const Header = () => {
             </div>
           </div>
           {/* / contact content */}
-          <div className="container">
+          <div className="container4">
             {/* logo */}
             <strong className="logo"><FontAwesomeIcon icon={faHeart} /></strong>
             {/* open nav mobile */}
