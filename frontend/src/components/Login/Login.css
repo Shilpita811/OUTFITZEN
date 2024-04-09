@@ -6,21 +6,20 @@
   }
   
   /* container and form */
-  .container5{
+  .container {
     max-width: 700px;
-    margin-left: 340px;
     width: 100%;
     background: #fff;
     padding: 25px 30px;
     border-radius: 5px;
   }
-  .container5 .title {
+  .container .title {
     font-size: 25px;
     font-weight: 500;
     position: relative;
   }
   
-  .container5 .title::before {
+  .container .title::before {
     content: "";
     position: absolute;
     height: 3.5px;
@@ -30,7 +29,7 @@
     bottom: 0;
   }
   
-  .container5 form .user__details {
+  .container form .user__details {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -128,7 +127,7 @@
   }
   
   @media only screen and (max-width: 584px) {
-    .container5 {
+    .container {
       max-width: 100%;
     }
   
@@ -141,7 +140,7 @@
       width: 100%;
     }
   
-    .container5 form .user__details {
+    .container form .user__details {
       max-height: 300px;
       overflow-y: scroll;
     }

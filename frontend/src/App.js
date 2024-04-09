@@ -8,6 +8,8 @@ import Contact from './components/Contact/Contact';
 import Aboutus from './components/About/Aboutus';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Registration from './components/Registration/Registration';
+import Product from './components/product/Product';
+import Login from './components/Login/Login';
 
 
 
@@ -22,6 +24,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/registration" element={<Registration />} />
           <Route path="/about" element={<Aboutus />} />
+          <Route path="/product" element={<Product />} />
+          <Route path="/login" element={<Login />} />
           
 
 

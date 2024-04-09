@@ -4,7 +4,7 @@ import './Registration.css';
 const Registration = () => {
   return (
     <>
-      <div className="container5">
+     <div className="container5">
                 <div className="title">Registration</div>
                 <form action="#">
                     <div className="user__details">
@@ -59,9 +59,9 @@ const Registration = () => {
                     </div>
                 </form>
             </div>
-</>
+    </>
   )
 }
 
-export default Registration
+export default Registration;
 
