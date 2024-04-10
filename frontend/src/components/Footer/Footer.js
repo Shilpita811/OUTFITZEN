@@ -9,8 +9,8 @@ const Footer = () => {
 			<div className="footer-col">
 				<h4>company</h4>
 				<ul>
-					<li><a href="#">about us</a></li>
-					<li><a href="#">our services</a></li>
+					<li><a href="/about">about us</a></li>
+					<li><a href="/contact">contact us</a></li>
 					<li><a href="#">privacy policy</a></li>
 					<li><a href="#">visit website</a></li>
 				</ul>

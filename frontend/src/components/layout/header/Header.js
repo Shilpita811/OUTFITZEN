@@ -30,7 +30,7 @@ const Header = () => {
                 <input type="text" placeholder="What are you looking for?" className="input-search" />
               </div>
             </label>
-            {/* // search */}
+            {/* search */}
             <nav className="nav-content">
               {/* nav */}
               <ul className="nav-content-list">
@@ -40,14 +40,14 @@ const Header = () => {
                     <FontAwesomeIcon icon={faUserCircle} /><span className="login-text">Hello, Sign in <strong>Create Account</strong></span> <span className="item-arrow"></span>
                     {/* submenu */}
                     <ul className="login-list">
-                      <li className="login-list-item"><a href="https://www.cupcom.com.br/">My account</a></li>
-                      <li className="login-list-item"><a href="https://www.cupcom.com.br/">Create account</a></li>
-                      <li className="login-list-item"><a href="https://www.cupcom.com.br/">logout</a></li>
+                      {/* <li className="login-list-item"><a href="">My account</a></li> */}
+                      <li className="login-list-item"><a href="/registration">Create account</a></li>
+                      <li className="login-list-item"><a href="/login">login</a></li>
                     </ul>
                   </label>
                 </li>
-                <li className="nav-content-item"><a className="nav-content-link" href="https://www.cupcom.com.br/"><FontAwesomeIcon icon={faHeart} /></a></li>
-                <li className="nav-content-item"><a className="nav-content-link" href="https://www.cupcom.com.br/"><FontAwesomeIcon icon={faShoppingCart} /></a></li>
+                <li className="nav-content-item"><a className="nav-content-link" href=""><FontAwesomeIcon icon={faHeart} /></a></li>
+                <li className="nav-content-item"><a className="nav-content-link" href=""><FontAwesomeIcon icon={faShoppingCart} /></a></li>
                 {/* call to action */}
               </ul>
             </nav>
@@ -61,35 +61,89 @@ const Header = () => {
                   <FontAwesomeIcon icon={faAngleUp} />
                 </span>
                 <ul className="all-category-list">
-                  <li className="all-category-list-item"><a href="https://www.cupcom.com.br/" className="all-category-list-link">Smartphones<FontAwesomeIcon icon={faAngleRight} /></a>
+                  <li className="all-category-list-item"><a href="" className="all-category-list-link">Smartphones<FontAwesomeIcon icon={faAngleRight} /></a>
                     <div className="category-second-list">
                       <ul className="category-second-list-ul">
-                        <li className="category-second-item"><a href="https://www.cupcom.com.br/">Iphone 10</a></li>
-                        <li className="category-second-item"><a href="https://www.cupcom.com.br/">Galaxy Note 10</a></li>
-                        <li className="category-second-item"><a href="https://www.cupcom.com.br/">Motorola One </a></li>
-                        <li className="category-second-item"><a href="https://www.cupcom.com.br/">Galaxy A80 </a></li>
-                        <li className="category-second-item"><a href="https://www.cupcom.com.br/">Galaxy M </a></li>
-                        <li className="category-second-item"><a href="https://www.cupcom.com.br/">Huaway P30 </a></li>
+                        <li className="category-second-item"><a href="">Iphone 10</a></li>
+                        <li className="category-second-item"><a href="">Galaxy Note 10</a></li>
+                        <li className="category-second-item"><a href="">Motorola One </a></li>
+                        <li className="category-second-item"><a href="">Galaxy A80 </a></li>
+                        <li className="category-second-item"><a href="">Galaxy M </a></li>
+                        <li className="category-second-item"><a href="">Huaway P30 </a></li>
                       </ul>
-                      <div className="img-product-menu"><img src="https://i.ibb.co/Vvndkmy/banner.jpg" alt="banner" /></div>
                     </div>
                   </li>
-                  <li className="all-category-list-item"><a href="https://www.cupcom.com.br/" className="all-category-list-link">Furniture <FontAwesomeIcon icon={faAngleRight} /></a></li>
-                  <li className="all-category-list-item"><a href="https://www.cupcom.com.br/" className="all-category-list-link">Toys<FontAwesomeIcon icon={faAngleRight} /></a></li>
-                  <li className="all-category-list-item"><a href="https://www.cupcom.com.br/" className="all-category-list-link">Computing<FontAwesomeIcon icon={faAngleRight} /></a></li>
-                  <li className="all-category-list-item"><a href="https://www.cupcom.com.br/" className="all-category-list-link">Games<FontAwesomeIcon icon={faAngleRight} /></a></li>
-                  <li className="all-category-list-item"><a href="" className="all-category-list-link">Automotive<FontAwesomeIcon icon={faAngleRight} /></a></li>
+                  <li className="all-category-list-item"><a href="" className="all-category-list-link">Furniture <FontAwesomeIcon icon={faAngleRight} /></a>
+                  <div className="category-second-list">
+                      <ul className="category-second-list-ul">
+                        <li className="category-second-item"><a href="/">Iphone 10</a></li>
+                        <li className="category-second-item"><a href="">Galaxy Note 10</a></li>
+                        <li className="category-second-item"><a href="">Motorola One </a></li>
+                        <li className="category-second-item"><a href="">Galaxy A80 </a></li>
+                        <li className="category-second-item"><a href="">Galaxy M </a></li>
+                        <li className="category-second-item"><a href="">Huaway P30 </a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li className="all-category-list-item"><a href="" className="all-category-list-link">Toys<FontAwesomeIcon icon={faAngleRight} /></a>
+                  <div className="category-second-list">
+                      <ul className="category-second-list-ul">
+                        <li className="category-second-item"><a href="/">Iphone 10</a></li>
+                        <li className="category-second-item"><a href="">Galaxy Note 10</a></li>
+                        <li className="category-second-item"><a href="">Motorola One </a></li>
+                        <li className="category-second-item"><a href="">Galaxy A80 </a></li>
+                        <li className="category-second-item"><a href="">Galaxy M </a></li>
+                        <li className="category-second-item"><a href="">Huaway P30 </a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li className="all-category-list-item"><a href="" className="all-category-list-link">Computing<FontAwesomeIcon icon={faAngleRight} /></a>
+                  <div className="category-second-list">
+                      <ul className="category-second-list-ul">
+                        <li className="category-second-item"><a href="/">Iphone 10</a></li>
+                        <li className="category-second-item"><a href="">Galaxy Note 10</a></li>
+                        <li className="category-second-item"><a href="">Motorola One </a></li>
+                        <li className="category-second-item"><a href="">Galaxy A80 </a></li>
+                        <li className="category-second-item"><a href="">Galaxy M </a></li>
+                        <li className="category-second-item"><a href="">Huaway P30 </a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li className="all-category-list-item"><a href="" className="all-category-list-link">Games<FontAwesomeIcon icon={faAngleRight} /></a>
+                  <div className="category-second-list">
+                      <ul className="category-second-list-ul">
+                        <li className="category-second-item"><a href="/">Iphone 10</a></li>
+                        <li className="category-second-item"><a href="">Galaxy Note 10</a></li>
+                        <li className="category-second-item"><a href="">Motorola One </a></li>
+                        <li className="category-second-item"><a href="">Galaxy A80 </a></li>
+                        <li className="category-second-item"><a href="">Galaxy M </a></li>
+                        <li className="category-second-item"><a href="">Huaway P30 </a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li className="all-category-list-item"><a href="" className="all-category-list-link">Automotive<FontAwesomeIcon icon={faAngleRight} /></a>
+                  <div className="category-second-list">
+                      <ul className="category-second-list-ul">
+                        <li className="category-second-item"><a href="/">Iphone 10</a></li>
+                        <li className="category-second-item"><a href="">Galaxy Note 10</a></li>
+                        <li className="category-second-item"><a href="">Motorola One </a></li>
+                        <li className="category-second-item"><a href="">Galaxy A80 </a></li>
+                        <li className="category-second-item"><a href="">Galaxy M </a></li>
+                        <li className="category-second-item"><a href="">Huaway P30 </a></li>
+                      </ul>
+                    </div>
+                  </li>
                 </ul>
               </label>
             </nav>
             <nav className="featured-category">
               <ul className="nav-row">
-                <li className="nav-row-list"><a href="https://www.cupcom.com.br/" className="nav-row-list-link">Smartphones</a></li>
-                <li className="nav-row-list"><a href="https://www.cupcom.com.br/" className="nav-row-list-link">furniture</a></li>
-                <li className="nav-row-list"><a href="https://www.cupcom.com.br/" className="nav-row-list-link">Toys</a></li>
-                <li className="nav-row-list"><a href="https://www.cupcom.com.br/" className="nav-row-list-link">Computing</a></li>
-                <li className="nav-row-list"><a href="https://www.cupcom.com.br/" className="nav-row-list-link">Games</a></li>
-                <li className="nav-row-list"><a href="https://www.cupcom.com.br/" className="nav-row-list-link">Automotive</a></li>
+                <li className="nav-row-list"><a href="" className="nav-row-list-link">Smartphones</a></li>
+                <li className="nav-row-list"><a href="" className="nav-row-list-link">furniture</a></li>
+                <li className="nav-row-list"><a href="" className="nav-row-list-link">Toys</a></li>
+                <li className="nav-row-list"><a href="" className="nav-row-list-link">Computing</a></li>
+                <li className="nav-row-list"><a href="" className="nav-row-list-link">Games</a></li>
+                <li className="nav-row-list"><a href="" className="nav-row-list-link">Automotive</a></li>
               </ul>
             </nav>
           </div>

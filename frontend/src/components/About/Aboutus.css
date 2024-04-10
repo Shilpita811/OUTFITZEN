@@ -6,10 +6,10 @@ h3{
   color: #2c3145;
   font-size: 30px;
 }
-h4{
+/* h4{
   color: #2c3145;
   text-align: center;
-}
+} */
 a, a:hover, a:focus, a:active {
   text-decoration: none;
   outline: none;

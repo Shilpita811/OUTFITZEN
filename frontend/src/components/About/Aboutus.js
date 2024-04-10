@@ -24,7 +24,7 @@ const Aboutus = () => {
                             {/* <div className="about_icon_box">
                                 <p className="text_custom font-weight-bold">Lorem Ipsum is simply dummy text</p>
                             </div> */}
-                            <h4 className="about_heading text-capitalize font-weight-bold mt-4">.</h4>
+                            <h4 className="about_heading text-capitalize font-weight-bold mt-4"></h4>
                             <p className="text-muted mt-3">Our mission is to be a strategic partner for businesses seeking innovative and reliable technology solutions. We strive to understand the unique challenges our clients face and leverage our expertise to deliver tailored, future-proof solutions that drive growth and efficiency..</p>
 
                             <p className="text-muted mt-3"> Our mission is to be a strategic partner for businesses seeking innovative and reliable technology solutions. We strive to understand the unique challenges our clients face and leverage our expertise to deliver tailored, future-proof solutions that drive growth and efficiency..</p>
