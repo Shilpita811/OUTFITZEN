@@ -1,4 +1,4 @@
-/* a {
+.content9 a {
     text-decoration: none;
 }
 
@@ -11,7 +11,7 @@
     margin: 50px 0;
 }
 
-.content2 {
+.content9 {
     width: 20%;
     min-width: 250px;
     margin: 15px;
@@ -23,12 +23,12 @@
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.20), 0 10px 10px rgba(0, 0, 0, 0.20);
 }
 
-.content2:hover {
+.content9:hover {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.24);
     transform: translateY(-3px);
 }
 
-img {
+.content9 img {
     width: 200px;
     height: 200px;
     text-align: center;
@@ -37,27 +37,27 @@ img {
     border-radius: 16px;
 }
 
-h3{
+.content9 h3{
     text-align: center;
     font-size: 25px;
     margin: 0;
     padding: 12px 0;
 }
 
-p {
+.content9 p {
     text-align: center;
     color: #b2bec3;
     padding: 0 8px;
 }
 
-h6 {
+.content9 h6 {
     font-size: 18px;
     text-align: center;
     color: #222f25;
     margin: 5px 0;
 }
 
-ul {
+.content9 ul {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -65,19 +65,19 @@ ul {
     padding-top: 0;
 }
 
-li {
+.content9 li {
     padding-left: 4px;
 }
 
-.fas {
+.content9 .fas {
     font-size: 24px;
 }
 
-.checked {
+.content9 .checked {
     color: gold;
 }
 
-.button2 {
+.content9 button {
     text-align: center;
     width: 100%;
     border: none;
@@ -90,4 +90,4 @@ li {
     outline: none;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-} */
+}
