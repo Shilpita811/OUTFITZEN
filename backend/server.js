@@ -16,3 +16,13 @@ const server = app.listen(PORT,() =>{
     console.log(`Server is running on port ${PORT}`);
 
 })
+
+// Unhandled Promise Rejections
+process.on("unhandledRejection", (err) => {
+    console.log(`Error: ${err.message}`);
+    console.log(`Shutting Down The Server due to unhandled promise rejection`);
+
+    server.close(()=>{
+        process.exit(1);
+    });
+})
