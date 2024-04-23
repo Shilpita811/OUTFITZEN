@@ -1,5 +1,5 @@
 const mongoose=require('mongoose');
-const validator=require('validator');
+// const validator=require('validator');
 const contactSchema=new mongoose.Schema({
 name:{
     type:String,
@@ -8,7 +8,7 @@ name:{
 email:{
     type:String,
     required:true,
-    validate: [validator.isEmail, "Please Enter Valid Email"]
+    // validate: [validator.isEmail, "Please Enter Valid Email"]
 },
 phone:{
     type:Number,

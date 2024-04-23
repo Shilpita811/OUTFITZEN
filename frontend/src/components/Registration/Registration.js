@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import {  useNavigate } from 'react-router-dom';
 import './Registration.css';
 import { useAlert } from 'react-alert';
 // import { useDispatch, useSelector } from 'react-redux';
@@ -7,6 +8,7 @@ import axios from "axios";
 
 const Registration = () => {
     const alert=useAlert();
+    const navigate = useNavigate();
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -31,6 +33,8 @@ const Registration = () => {
             const response = await axios.post('/api/user/register', formData);
             // Assuming the response contains the registered user data
             // onRegister(response.data);
+            alert.success('Register Successfull');
+            navigate('/')
         } catch (error) {
             console.error('Registration Error:', error.message);
             // Handle error here, such as displaying an error message to the user

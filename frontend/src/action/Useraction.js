@@ -10,20 +10,19 @@ import axios from 'axios';
 //register
 export const register  =(userData)=>async(dispatch)=>{
     try {
-        dispatch({type:REGISTER_USER_REQUEST});
-        const config={headers:{"Content-Type":"multipart/form-data"}};
-        const {data}=await axios.post(`/api/user/register`,userData,config);
-        dispatch ({
-            type:REGISTER_USER_SUCCESS,
-            payload:data.user
-        })
-
-    } catch (error) {
-        dispatch ({
-            type:REGISTER_USER_FAILED,
-            payload:error.response.data.message,
-        })
-    }
+        dispatch({ type: REGISTER_USER_REQUEST });
+    
+        const config = { headers: { "Content-Type": "multipart/form-data" } };
+    
+        const { data } = await axios.post(`/api/user/register`, userData, config);
+    
+        dispatch({ type: REGISTER_USER_SUCCESS, payload: data.user });
+      } catch (error) {
+        dispatch({
+          type: REGISTER_USER_FAILED,
+          payload: error.response.data.message,
+        });
+      }
 
 }
 //clearerror
