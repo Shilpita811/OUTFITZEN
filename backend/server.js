@@ -1,5 +1,7 @@
 const app = require('./app');
 const dotenv = require("dotenv");
+const cloudinary = require("cloudinary");
+
 
 const databaseConnect = require('./config/database')
 
@@ -16,6 +18,11 @@ const server = app.listen(PORT,() =>{
     console.log(`Server is running on port ${PORT}`);
 
 })
+cloudinary.config({
+    cloud_name: process.env.CLOUDINARY_NAME,
+    api_key: process.env.CLOUDINARY_API_KEY,
+    api_secret: process.env.CLOUDINARY_API_SECRET,
+});
 
 // Unhandled Promise Rejections
 process.on("unhandledRejection", (err) => {
