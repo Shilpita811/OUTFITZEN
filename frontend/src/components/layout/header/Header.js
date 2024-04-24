@@ -1,154 +1,101 @@
-import React from 'react';
-import "./Header.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhoneSquareAlt, faEnvelopeSquare, faHeart, faSearch, faUserCircle, faShoppingCart, faBars, faAngleDown, faAngleUp, faAngleRight } from '@fortawesome/free-solid-svg-icons';
-
+import React from 'react'
+import "./Header.css"
 
 
 const Header = () => {
-    return (
-        <header>
-          {/* contact content */}
-          <div className="header-content-top">
-            <div className="content">
-              <span><FontAwesomeIcon icon={faPhoneSquareAlt} /> (91)9330125090</span>
-              <span><FontAwesomeIcon icon={faEnvelopeSquare} /> outfuitzen@email.com</span>
+  return (
+    <div class="main-navbar shadow-sm sticky-top">
+      <div class="top-navbar">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-2 my-auto d-none d-sm-none d-md-block d-lg-block">
+              <h5 class="brand-name"><a className="logo" href='/'>OutfitZen</a></h5>
+            </div>
+            <div class="col-md-5 my-auto">
+              <form role="search">
+                <div class="input-group">
+                  <input type="search" placeholder="Search your product" class="form-control" />
+                  <button class="btn bg-white" type="submit">
+                    <i class="fa fa-search"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-5 my-auto">
+              <ul class="nav justify-content-end">
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="fa fa-shopping-cart"></i> Cart
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="fa fa-heart"></i> Wishlist
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-user"></i> Account
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="/registration"><i class="fa fa-user"></i> Register</a></li>
+                    <li><a class="dropdown-item" href="/login"><i class="fa fa-sign-out"></i> Login </a></li>
+                    
+                    <li><a class="dropdown-item" href="#"><i class="fa fa-list"></i> My Orders</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa fa-heart"></i> My Wishlist</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa fa-shopping-cart"></i> My Cart</a></li>
+                    {/* <li><a class="dropdown-item" href="#"><i class="fa fa-sign-out"></i> Logout</a></li> */}
+                  </ul>
+                </li>
+              </ul>
             </div>
           </div>
-          {/* / contact content */}
-          <div className="container4">
-            {/* logo */}
-            <strong className="logo"><FontAwesomeIcon icon={faHeart} /></strong>
-            {/* open nav mobile */}
-    
-            {/*search */}
-            <label className="open-search" htmlFor="open-search">
-              {/* <FontAwesomeIcon icon={faSearch} /> */}
-              <input className="input-open-search" id="open-search" type="checkbox" name="menu" />
-              <div className="search">
-                <button className="button-search"><FontAwesomeIcon icon={faSearch} /></button>
-                <input type="text" placeholder="What are you looking for?" className="input-search" />
-              </div>
-            </label>
-            {/* search */}
-            <nav className="nav-content">
-              {/* nav */}
-              <ul className="nav-content-list">
-                <li className="nav-content-item account-login">
-                  <label className="open-menu-login-account" htmlFor="open-menu-login-account">
-                    <input className="input-menu" id="open-menu-login-account" type="checkbox" name="menu" />
-                    <FontAwesomeIcon icon={faUserCircle} /><span className="login-text">Hello, Sign in <strong>Create Account</strong></span> <span className="item-arrow"></span>
-                    {/* submenu */}
-                    <ul className="login-list">
-                      {/* <li className="login-list-item"><a href="">My account</a></li> */}
-                      <li className="login-list-item"><a href="/registration">Create account</a></li>
-                      <li className="login-list-item"><a href="/login">login</a></li>
-                    </ul>
-                  </label>
-                </li>
-                <li className="nav-content-item"><a className="nav-content-link" href=""><FontAwesomeIcon icon={faHeart} /></a></li>
-                <li className="nav-content-item"><a className="nav-content-link" href=""><FontAwesomeIcon icon={faShoppingCart} /></a></li>
-                {/* call to action */}
-              </ul>
-            </nav>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand d-block d-sm-block d-md-none d-lg-none logo" href="#">
+            Outfitzen
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">All Categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">New Arrivals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Featured Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/men">Men</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/women">Women</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/kids">Kids</a>
+              </li>
+              {/* <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Appliances</a>
+              </li> */}
+            </ul>
           </div>
-          {/* nav navigation commerce */}
-          <div className="nav-container">
-            <nav className="all-category-nav">
-              <label className="open-menu-all" htmlFor="open-menu-all">
-                <input className="input-menu-all" id="open-menu-all" type="checkbox" name="menu-open" />
-                <span className="all-navigator"><FontAwesomeIcon icon={faBars} /> <span>All category</span> <FontAwesomeIcon icon={faAngleDown} />
-                  <FontAwesomeIcon icon={faAngleUp} />
-                </span>
-                <ul className="all-category-list">
-                  <li className="all-category-list-item"><a href="" className="all-category-list-link">Smartphones<FontAwesomeIcon icon={faAngleRight} /></a>
-                    <div className="category-second-list">
-                      <ul className="category-second-list-ul">
-                        <li className="category-second-item"><a href="">Iphone 10</a></li>
-                        <li className="category-second-item"><a href="">Galaxy Note 10</a></li>
-                        <li className="category-second-item"><a href="">Motorola One </a></li>
-                        <li className="category-second-item"><a href="">Galaxy A80 </a></li>
-                        <li className="category-second-item"><a href="">Galaxy M </a></li>
-                        <li className="category-second-item"><a href="">Huaway P30 </a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li className="all-category-list-item"><a href="" className="all-category-list-link">Furniture <FontAwesomeIcon icon={faAngleRight} /></a>
-                  <div className="category-second-list">
-                      <ul className="category-second-list-ul">
-                        <li className="category-second-item"><a href="/">Iphone 10</a></li>
-                        <li className="category-second-item"><a href="">Galaxy Note 10</a></li>
-                        <li className="category-second-item"><a href="">Motorola One </a></li>
-                        <li className="category-second-item"><a href="">Galaxy A80 </a></li>
-                        <li className="category-second-item"><a href="">Galaxy M </a></li>
-                        <li className="category-second-item"><a href="">Huaway P30 </a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li className="all-category-list-item"><a href="" className="all-category-list-link">Toys<FontAwesomeIcon icon={faAngleRight} /></a>
-                  <div className="category-second-list">
-                      <ul className="category-second-list-ul">
-                        <li className="category-second-item"><a href="/">Iphone 10</a></li>
-                        <li className="category-second-item"><a href="">Galaxy Note 10</a></li>
-                        <li className="category-second-item"><a href="">Motorola One </a></li>
-                        <li className="category-second-item"><a href="">Galaxy A80 </a></li>
-                        <li className="category-second-item"><a href="">Galaxy M </a></li>
-                        <li className="category-second-item"><a href="">Huaway P30 </a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li className="all-category-list-item"><a href="" className="all-category-list-link">Computing<FontAwesomeIcon icon={faAngleRight} /></a>
-                  <div className="category-second-list">
-                      <ul className="category-second-list-ul">
-                        <li className="category-second-item"><a href="/">Iphone 10</a></li>
-                        <li className="category-second-item"><a href="">Galaxy Note 10</a></li>
-                        <li className="category-second-item"><a href="">Motorola One </a></li>
-                        <li className="category-second-item"><a href="">Galaxy A80 </a></li>
-                        <li className="category-second-item"><a href="">Galaxy M </a></li>
-                        <li className="category-second-item"><a href="">Huaway P30 </a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li className="all-category-list-item"><a href="" className="all-category-list-link">Games<FontAwesomeIcon icon={faAngleRight} /></a>
-                  <div className="category-second-list">
-                      <ul className="category-second-list-ul">
-                        <li className="category-second-item"><a href="/">Iphone 10</a></li>
-                        <li className="category-second-item"><a href="">Galaxy Note 10</a></li>
-                        <li className="category-second-item"><a href="">Motorola One </a></li>
-                        <li className="category-second-item"><a href="">Galaxy A80 </a></li>
-                        <li className="category-second-item"><a href="">Galaxy M </a></li>
-                        <li className="category-second-item"><a href="">Huaway P30 </a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li className="all-category-list-item"><a href="" className="all-category-list-link">Automotive<FontAwesomeIcon icon={faAngleRight} /></a>
-                  <div className="category-second-list">
-                      <ul className="category-second-list-ul">
-                        <li className="category-second-item"><a href="/">Iphone 10</a></li>
-                        <li className="category-second-item"><a href="">Galaxy Note 10</a></li>
-                        <li className="category-second-item"><a href="">Motorola One </a></li>
-                        <li className="category-second-item"><a href="">Galaxy A80 </a></li>
-                        <li className="category-second-item"><a href="">Galaxy M </a></li>
-                        <li className="category-second-item"><a href="">Huaway P30 </a></li>
-                      </ul>
-                    </div>
-                  </li>
-                </ul>
-              </label>
-            </nav>
-            <nav className="featured-category">
-              <ul className="nav-row">
-                <li className="nav-row-list"><a href="" className="nav-row-list-link">Smartphones</a></li>
-                <li className="nav-row-list"><a href="" className="nav-row-list-link">furniture</a></li>
-                <li className="nav-row-list"><a href="" className="nav-row-list-link">Toys</a></li>
-                <li className="nav-row-list"><a href="" className="nav-row-list-link">Computing</a></li>
-                <li className="nav-row-list"><a href="" className="nav-row-list-link">Games</a></li>
-                <li className="nav-row-list"><a href="" className="nav-row-list-link">Automotive</a></li>
-              </ul>
-            </nav>
-          </div>
-        </header>
-      );
+        </div>
+      </nav>
+    </div>
+  )
 }
 
 export default Header
