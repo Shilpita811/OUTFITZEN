@@ -16,6 +16,11 @@ import Kids from './components/Kidsproduct/Kids';
 import Men from './components/Menproduct/Men';
 import Women from './components/Womenproduct/Women';
 import Admin from './components/Admin/Admin';
+import Payment from './components/Payment/Payment';
+import Newarrival from './components/Newarrival/Newarrival';
+
+
+
 
 
 
@@ -39,6 +44,9 @@ function App() {
           <Route path="/men" element={<Men />} /> 
           <Route path="/women" element={<Women />} /> 
           <Route path="/admin" element={<Admin />} />
+          <Route path="/payment" element={<Payment/>}/>
+          <Route path="/newarrive" element={<Newarrival/>}/>
+
 
 
 
